@@ -1,0 +1,6 @@
+<p>Nasza lista ToDo</p>
+<ul>
+  <li *ngFor="let item of listaToDo">{{item.nazwa}} <span (click)="usun(item)" class="btn btn-danger">X</span> </li>
+</ul>
+<input [(ngModel)]="inputTekst"  >
+<button (click)="dodaj()">dodaj</button>
